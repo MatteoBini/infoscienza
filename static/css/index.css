@@ -1,0 +1,138 @@
+::-webkit-scrollbar {
+	display: none !important;
+}
+
+.scroll-section {
+	width: 100%;
+	height: 100vh;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+}
+
+.scroll-section h1{
+	position: absolute;
+	top: 10px;
+	font-size: 2vw;
+	line-height: 0.85em;
+	font-weight: 700;
+	animation: changeColor 5s infinite;
+}
+
+@keyframes changeColor {
+	0% {
+		color: #0000ff;
+	}
+	33% {
+		color: #ff0000;
+	}
+	66% {
+		color: #00ff00;
+	}
+	100% {
+		color: #0000ff;
+	}
+}
+
+
+.scroll-container {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.index{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+}
+
+.index ol li{
+	list-style: none;
+	text-align: center;
+	line-height: 2em;
+	font-size: 30px;
+	font-weight: 700;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+
+.index ol li:nth-child(1):hover{
+	color: #0000ff;
+}
+
+.index ol li:nth-child(2):hover{
+	color: #ff0000;
+}
+
+.index ol li:nth-child(3):hover{
+	color: #00ff00;
+}
+
+.container100100{
+	height: 100%;
+	width: 100%;
+}
+
+.container-center{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.paragraph{
+	width: 50%;
+	text-align: center;
+	margin: 3vh 0;
+}
+.paragraph h4, .paragraph p{
+	margin: 0;
+}
+.paragraph h4{
+	margin: 10px 0 5px 0;
+}
+
+
+.sponsor{
+	margin-top: 2%;
+	width: 100%;
+}
+
+.bottone-git-hub{
+	cursor: pointer;
+	margin-left: 1%;
+	color: #090909;
+	padding: 0.7em 1.7em;
+	font-size: 14px;
+	border-radius: 0.5em;
+	background: #e8e8e8;
+	border: 1px solid #e8e8e8;
+	transition: all .3s;
+	box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-ms-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	font-weight: 700;
+}
+  
+.bottone-git-hub:hover {
+	border: 1px solid black;
+}
+  
+.bottone-git-hub:active {
+	box-shadow: 4px 4px 12px black, -4px -4px 12px #ffffff;
+  }
