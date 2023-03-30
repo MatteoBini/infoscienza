@@ -16,7 +16,7 @@ app.get("/aerodinamica", async (req, res) => {
     res.render("aerodinamica.ejs");
 });
 app.get("/aerodinamica/B-2", async (req, res) => {
-    res.render("aerodinamica.ejs");
+    res.render("B-2.ejs");
 });
 
 /* zupup project */

@@ -19,7 +19,7 @@
 	font-size: 2vw;
 	line-height: 0.85em;
 	font-weight: 700;
-	animation: changeColor 5s infinite;
+	/* animation: changeColor 5s infinite; */
 }
 
 @keyframes changeColor {
